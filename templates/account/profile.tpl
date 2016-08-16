@@ -9,8 +9,6 @@
 		<span component="aboutme" class="text-center aboutme">{aboutme}</span>
 		<!-- ENDIF aboutme -->
 
-
-
 		<div class="account-stats">
 			<!-- IF !reputation:disabled -->
 			<div class="stat">
@@ -20,7 +18,7 @@
 			<!-- ENDIF !reputation:disabled -->
 
 			<div class="stat">
-				<div class="human-readable-number" title="{postcount}">{postcount}</div>
+				<div class="human-readable-number" title="{postcount}">Post count {postcount}</div>
 				<span class="stat-label">[[global:posts]]</span>
 			</div>
 
@@ -69,14 +67,53 @@
 		</div>
 	</div>
 
-
 	<hr />
-
+	<div class="container">
+	    <div class = "tabbable">
+		    <ul class="nav nav-tabs">
+        		<li class="active">
+        			<a id='overviewTabAnchor' data-toggle='tab' href='#overviewTabContent' class='active'>Tab 1</a>
+        		</li>
+				<li>
+          			<a id='journeyTabAnchor' data-toggle='tab' href='#journeyTabContent'>Tab 2</a>          
+        		</li>
+				<li>
+          			<a id='deviceTabAnchor' data-toggle='tab' href='#deviceTabContent'>Tab 3</a>
+				</li>  
+			</ul>
+			<div class="tab-content">
+				<div id = "overviewTabContent" class="tab-pane fade in active">
+					<div class="ibox float-e-margins">
+						<div class="col-xs-12">
+							<h1>[[pages:account/posts, {username}]]</h1>
+							<div class="col-xs-12">
+								<!-- IF !posts.length -->
+									<div class="alert alert-warning">[[user:has_no_posts]]</div>
+								<!-- ENDIF !posts.length -->
+								<!-- IMPORT partials/posts_list.tpl -->
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="journeyTabContent" class="tab-pane fade">
+					<div class="ibox float-e-margins">
+						<div style="width: 100px; height: 100px; background-color:red;"></div>
+					</div>
+				</div>
+				<div id="deviceTabContent" class="tab-pane fade">
+					<div class="ibox float-e-margins">
+						<div style="width: 100px; height: 100px; background-color:blue;"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
 	<div class="row">
 		<div class="col-xs-12 account-block hidden">
 			<div class="account-picture-block text-center">
 				<span>
-					<span class="account-username"> {username}</span>
+					<span class="account-username">{username}</span>
 				</span>
 
 				<!-- IF !isSelf -->
@@ -114,19 +151,6 @@
 		</div>
 	</div>
 	<!-- ENDIF ips.length -->
-
-	<div class="row">
-		<div class="col-xs-12">
-			<h1>[[pages:account/posts, {username}]]</h1>
-
-			<div class="col-xs-12">
-				<!-- IF !posts.length -->
-				<div class="alert alert-warning">[[user:has_no_posts]]</div>
-				<!-- ENDIF !posts.length -->
-				<!-- IMPORT partials/posts_list.tpl -->
-			</div>
-		</div>
-	</div>
 
 	<div id="user-action-alert" class="alert alert-success hide"></div>
 </div>
