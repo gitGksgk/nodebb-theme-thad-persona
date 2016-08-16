@@ -1,7 +1,7 @@
 {
   "_args": [
     [
-      "nodebb-theme-persona@4.1.19",
+      "nodebb-theme-thad-persona@4.1.19",
       "/home/think/dev/jubilee/nodebb"
     ]
   ],
@@ -32,10 +32,7 @@
   "_requiredBy": [
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/nodebb-theme-persona/-/nodebb-theme-persona-4.1.19.tgz",
-  "_shasum": "ba2a3aaef63c70dd08fb2b90ef87943792c5de7a",
   "_shrinkwrap": null,
-  "_spec": "nodebb-theme-persona@4.1.19",
   "_where": "/home/think/dev/jubilee/nodebb",
   "bugs": {
     "url": "https://github.com/thadeuszlay/nodebb-theme-thad-persona/issues"
@@ -51,12 +48,7 @@
   "description": "Persona theme for NodeBB",
   "devDependencies": {},
   "directories": {},
-  "dist": {
-    "shasum": "ba2a3aaef63c70dd08fb2b90ef87943792c5de7a",
-    "tarball": "https://registry.npmjs.org/nodebb-theme-persona/-/nodebb-theme-persona-4.1.19.tgz"
-  },
-  "gitHead": "c8b64a1db2536f5a1dade9776b8b46497e2ee700",
-  "homepage": "https://github.com/psychobunny/nodebb-theme-persona#readme",
+  "homepage": "https://github.com/thadeuszlay/nodebb-theme-thad-persona#readme",
   "keywords": [
     "bootstrap",
     "forum",
@@ -68,19 +60,11 @@
   "main": "theme.less",
   "maintainers": [
     {
-      "name": "psychobunny",
-      "email": "psycho.bunny@hotmail.com"
-    },
-    {
-      "name": "baris",
-      "email": "barisusakli@gmail.com"
-    },
-    {
-      "name": "julianlam",
-      "email": "julian@designcreateplay.com"
+      "name": "thadeuszlay",
+      "email": "thadeuszlay@gmail.com"
     }
   ],
-  "name": "nodebb-theme-persona",
+  "name": "nodebb-theme-thad-persona",
   "nbbpm": {
     "compatibility": "^0.8.2 || ^0.9.0 || ^1.0.0"
   },
@@ -88,7 +72,7 @@
   "readme": "ERROR: No README data found!",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/psychobunny/nodebb-theme-persona.git"
+    "url": "git+https://github.com/thadeuszlay/nodebb-theme-thad-persona.git"
   },
   "scripts": {},
   "version": "4.1.19"

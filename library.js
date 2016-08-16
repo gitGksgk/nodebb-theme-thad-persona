@@ -10,16 +10,16 @@ library.init = function(params, callback) {
 	var	middleware = params.middleware;
 
 	app.get('/admin/plugins/persona', middleware.admin.buildHeader, renderAdmin);
-	app.get('/api/admin/plugins/persona', renderAdmin);
+	app.get('/api/admin/plugins/thadpersona', renderAdmin);
 
 	callback();
 };
 
 library.addAdminNavigation = function(header, callback) {
 	header.plugins.push({
-		route: '/plugins/persona',
+		route: '/plugins/thadpersona',
 		icon: 'fa-paint-brush',
-		name: 'Persona Theme'
+		name: 'Thad Persona Theme'
 	});
 
 	callback(null, header);
