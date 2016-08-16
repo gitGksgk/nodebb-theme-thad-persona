@@ -1,0 +1,7 @@
+{
+    "id": "nodebb-theme-thad-persona",
+    "name": "Thad Persona",
+    "description": "A variation of the default theme for NodeBB. Uses a standard approach to forum design.",
+    "url": "https://github.com/thadeuszlay/nodebb-theme-thad-persona",
+    "screenshot": "screenshot.png"
+}

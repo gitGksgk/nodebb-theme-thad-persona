@@ -1,0 +1,95 @@
+{
+  "_args": [
+    [
+      "nodebb-theme-persona@4.1.19",
+      "/home/think/dev/jubilee/nodebb"
+    ]
+  ],
+  "_from": "nodebb-theme-thad-persona@4.1.19",
+  "_id": "nodebb-theme-thad-persona@4.1.19",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/nodebb-theme-thad-persona",
+  "_nodeVersion": "4.4.7",
+  "_npmOperationalInternal": {
+    "host": "packages-16-east.internal.npmjs.com",
+    "tmp": "tmp/nodebb-theme-thad-persona-4.1.19.tgz_1470683453320_0.23134818696416914"
+  },
+  "_npmUser": {
+    "email": "thadeuszlay@gmail.com",
+    "name": "thadeuszlay"
+  },
+  "_npmVersion": "2.15.8",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "nodebb-theme-thad-persona",
+    "raw": "nodebb-theme-thad-persona@4.1.19",
+    "rawSpec": "4.1.19",
+    "scope": null,
+    "spec": "4.1.19",
+    "type": "version"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/nodebb-theme-persona/-/nodebb-theme-persona-4.1.19.tgz",
+  "_shasum": "ba2a3aaef63c70dd08fb2b90ef87943792c5de7a",
+  "_shrinkwrap": null,
+  "_spec": "nodebb-theme-persona@4.1.19",
+  "_where": "/home/think/dev/jubilee/nodebb",
+  "bugs": {
+    "url": "https://github.com/thadeuszlay/nodebb-theme-thad-persona/issues"
+  },
+  "contributors": [
+    {
+      "name": "Thadeusz Lay",
+      "email": "thadeuszlay@gmail.com",
+      "url": "https://github.com/thadeuszlay"
+    }
+  ],
+  "dependencies": {},
+  "description": "Persona theme for NodeBB",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "ba2a3aaef63c70dd08fb2b90ef87943792c5de7a",
+    "tarball": "https://registry.npmjs.org/nodebb-theme-persona/-/nodebb-theme-persona-4.1.19.tgz"
+  },
+  "gitHead": "c8b64a1db2536f5a1dade9776b8b46497e2ee700",
+  "homepage": "https://github.com/psychobunny/nodebb-theme-persona#readme",
+  "keywords": [
+    "bootstrap",
+    "forum",
+    "nodebb",
+    "responsive",
+    "theme"
+  ],
+  "license": "BSD-2-Clause",
+  "main": "theme.less",
+  "maintainers": [
+    {
+      "name": "psychobunny",
+      "email": "psycho.bunny@hotmail.com"
+    },
+    {
+      "name": "baris",
+      "email": "barisusakli@gmail.com"
+    },
+    {
+      "name": "julianlam",
+      "email": "julian@designcreateplay.com"
+    }
+  ],
+  "name": "nodebb-theme-persona",
+  "nbbpm": {
+    "compatibility": "^0.8.2 || ^0.9.0 || ^1.0.0"
+  },
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/psychobunny/nodebb-theme-persona.git"
+  },
+  "scripts": {},
+  "version": "4.1.19"
+}
