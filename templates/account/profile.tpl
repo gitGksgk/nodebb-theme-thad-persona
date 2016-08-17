@@ -72,17 +72,38 @@
 	    <div class = "tabbable">
 		    <ul class="nav nav-tabs">
         		<li class="active">
-        			<a id='overviewTabAnchor' data-toggle='tab' href='#overviewTabContent' class='active'>Tab 1</a>
+        			<a id='overviewTabAnchor' data-toggle='tab' href='#overviewTabContent' class='active'>General</a>
         		</li>
 				<li>
-          			<a id='journeyTabAnchor' data-toggle='tab' href='#journeyTabContent'>Tab 2</a>          
+          			<a id='journeyTabAnchor' data-toggle='tab' href='#journeyTabContent'>About</a>          
         		</li>
 				<li>
-          			<a id='deviceTabAnchor' data-toggle='tab' href='#deviceTabContent'>Tab 3</a>
+          			<a id='deviceTabAnchor' data-toggle='tab' href='#galleryContent'>Gallery</a>
 				</li>  
+				<li>
+          			<a id='galleryTabAnchor' data-toggle='tab' href='#deviceTabContent'>Posts</a>
+				</li>
+				<li>
+          			<a id='wallTabAnchor' data-toggle='tab' href='#wallTabContent'>Wall</a>
+				</li>
 			</ul>
 			<div class="tab-content">
 				<div id = "overviewTabContent" class="tab-pane fade in active">
+					<div class="ibox float-e-margins">
+						<div style="width: 100px; height: 100px; background-color:blue;"></div>
+					</div>
+				</div>
+				<div id="journeyTabContent" class="tab-pane fade">
+					<div class="ibox float-e-margins">
+						<div style="width: 200px; height: 100px; background-color:red;"></div>
+					</div>
+				</div>
+				<div id="galleryContent" class="tab-pane fade">
+					<div class="ibox float-e-margins">
+						<div style="width: 100px; height: 400px; background-color:green;"></div>
+					</div>
+				</div>				
+				<div id="deviceTabContent" class="tab-pane fade">
 					<div class="ibox float-e-margins">
 						<div class="col-xs-12">
 							<h1>[[pages:account/posts, {username}]]</h1>
@@ -95,16 +116,11 @@
 						</div>
 					</div>
 				</div>
-				<div id="journeyTabContent" class="tab-pane fade">
+				<div id = "wallTabContent" class="tab-pane fade">
 					<div class="ibox float-e-margins">
-						<div style="width: 100px; height: 100px; background-color:red;"></div>
+						<div style="width: 70px; height: 100px; background-color:yellow;"></div>
 					</div>
-				</div>
-				<div id="deviceTabContent" class="tab-pane fade">
-					<div class="ibox float-e-margins">
-						<div style="width: 100px; height: 100px; background-color:blue;"></div>
-					</div>
-				</div>
+				</div>				
 			</div>
 		</div>
 	</div>
