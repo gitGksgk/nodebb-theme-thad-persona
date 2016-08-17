@@ -48,72 +48,95 @@
 
 			<div class="<!-- IF !sso.length -->col-md-9 col-sm-8<!-- ELSE -->col-md-5 col-sm-4<!-- ENDIF !sso.length -->">
 				<div>
-					<form class='form-horizontal'>
+					<div class="container">
 
-						<div class="control-group">
-							<label class="control-label" for="inputFullname">[[user:fullname]]</label>
-							<div class="controls">
-								<input class="form-control" type="text" id="inputFullname" placeholder="[[user:fullname]]" value="{fullname}">
-							</div>
+						<div class = "tabbable">
+							<ul class="nav nav-tabs">
+								<li class="active">
+									<a id='overviewTabAnchor' data-toggle='tab' href='#overviewTabContent' class='active'>General</a>
+								</li>
+								<li>
+									<a id='journeyTabAnchor' data-toggle='tab' href='#journeyTabContent'>About</a>          
+								</li>
+								<li>
+									<a id='deviceTabAnchor' data-toggle='tab' href='#deviceTabContent'>Gallery</a>
+								</li>  
+								<li>
+									<div class="form-actions">
+										<a id="submitBtn" href="#" class="btn btn-primary">[[global:save_changes]]</a>
+									</div>								
+								</li>
+							</ul>
+							<form class='form-horizontal'>
+								<div class="tab-content">
+									<div id = "overviewTabContent" class="tab-pane fade in active">								
+										<div class="control-group">
+											<label class="control-label" for="inputFullname">[[user:fullname]]</label>
+											<div class="">
+												<input class="form-control" type="text" id="inputFullname" placeholder="[[user:fullname]]" value="{fullname}">
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="inputWebsite">[[user:website]]</label>
+											<div class="">
+												<input class="form-control" type="text" id="inputWebsite" placeholder="http://..." value="{website}">
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="inputLocation">[[user:location]]</label>
+											<div class="">
+												<input class="form-control" type="text" id="inputLocation" placeholder="[[user:location]]" value="{location}">
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="inputBirthday">[[user:birthday]]</label>
+											<div class="">
+												<input class="form-control" id="inputBirthday" value="{birthday}" placeholder="mm/dd/yyyy">
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="grouptitle">[[user:grouptitle]]</label>
+											<div class="">
+												<select class="form-control" id="groupTitle" data-property="groupTitle">
+													<option value="">[[user:no-group-title]]</option>
+													<!-- BEGIN groups -->
+													<!-- IF groups.userTitleEnabled -->
+													<option value="{groups.name}" <!-- IF groups.selected -->selected<!-- ENDIF groups.selected -->>{groups.userTitle}</option>
+													<!-- ENDIF groups.userTitleEnabled -->
+													<!-- END groups -->
+												</select>
+											</div>
+										</div>
+
+										<div class="control-group">
+											<label class="control-label" for="inputAboutMe">[[user:aboutme]]</label> <small><label id="aboutMeCharCountLeft"></label></small>
+											<div class="">
+												<textarea class="form-control" id="inputAboutMe" rows="5">{aboutme}</textarea>
+											</div>
+										</div>
+										<!-- IF !disableSignatures -->
+										<div class="control-group">
+											<label class="control-label" for="inputSignature">[[user:signature]]</label> <small><label id="signatureCharCountLeft"></label></small>
+											<div class="">
+												<textarea class="form-control" id="inputSignature" rows="5">{signature}</textarea>
+											</div>
+										</div>
+										<!-- ENDIF !disableSignatures -->
+
+										<input type="hidden" id="inputUID" value="{uid}"><br />
+									</div>
+									<div id = "journeyTabContent" class="tab-pane fade">
+									</div>
+									<div id = "deviceTabContent" class="tab-pane fade">
+									</div>																	
+								</div>
+							</form>
 						</div>
-
-						<div class="control-group">
-							<label class="control-label" for="inputWebsite">[[user:website]]</label>
-							<div class="controls">
-								<input class="form-control" type="text" id="inputWebsite" placeholder="http://..." value="{website}">
-							</div>
-						</div>
-
-						<div class="control-group">
-							<label class="control-label" for="inputLocation">[[user:location]]</label>
-							<div class="controls">
-								<input class="form-control" type="text" id="inputLocation" placeholder="[[user:location]]" value="{location}">
-							</div>
-						</div>
-
-						<div class="control-group">
-							<label class="control-label" for="inputBirthday">[[user:birthday]]</label>
-							<div class="controls">
-								<input class="form-control" id="inputBirthday" value="{birthday}" placeholder="mm/dd/yyyy">
-							</div>
-						</div>
-
-						<div class="control-group">
-							<label class="control-label" for="grouptitle">[[user:grouptitle]]</label>
-							<div class="controls">
-								<select class="form-control" id="groupTitle" data-property="groupTitle">
-									<option value="">[[user:no-group-title]]</option>
-									<!-- BEGIN groups -->
-									<!-- IF groups.userTitleEnabled -->
-									<option value="{groups.name}" <!-- IF groups.selected -->selected<!-- ENDIF groups.selected -->>{groups.userTitle}</option>
-									<!-- ENDIF groups.userTitleEnabled -->
-									<!-- END groups -->
-								</select>
-							</div>
-						</div>
-
-						<div class="control-group">
-							<label class="control-label" for="inputAboutMe">[[user:aboutme]]</label> <small><label id="aboutMeCharCountLeft"></label></small>
-							<div class="controls">
-								<textarea class="form-control" id="inputAboutMe" rows="5">{aboutme}</textarea>
-							</div>
-						</div>
-						<!-- IF !disableSignatures -->
-						<div class="control-group">
-							<label class="control-label" for="inputSignature">[[user:signature]]</label> <small><label id="signatureCharCountLeft"></label></small>
-							<div class="controls">
-								<textarea class="form-control" id="inputSignature" rows="5">{signature}</textarea>
-							</div>
-						</div>
-						<!-- ENDIF !disableSignatures -->
-
-						<input type="hidden" id="inputUID" value="{uid}"><br />
-
-						<div class="form-actions">
-							<a id="submitBtn" href="#" class="btn btn-primary">[[global:save_changes]]</a>
-						</div>
-
-					</form>
+					</dvi>
 				</div>
 
 				<hr class="visible-xs visible-sm"/>
@@ -136,4 +159,3 @@
 		</div>
 	<!-- IF sso.length --></div><!-- ENDIF sso.length -->
 </div>
-
